@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/**
+ * fontawesome
+ *
+ * @author Jennifer Cooley design@jccdesignworks.com
+ */
+
+//variables
+$fa-font-path: "/fonts/fontawesome";
+
+//base
+@import "node_modules/font-awesome/scss/font-awesome.scss";

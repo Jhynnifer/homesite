@@ -1,0 +1,40 @@
+@import "variables";
+
+/**
+ * extended footer styles
+ *
+ * @author Jennifer Cooley design@jccdesignworks.com
+ */
+
+#extended_footer {
+
+    //general
+    background-color: darken($orange, 10);
+    background-image: url('/images/backgrounds/wiggle.svg');
+    color: #fff;
+    font-size: 1.2em;
+    padding: 4em 0;
+
+    //links
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: $gold;
+    }
+
+    .extended-footer {
+        background: $orange;
+        padding: 20px 0;
+        p {
+            font-size: $font-size-h5
+        }
+    }
+
+    //logos
+    .logo {
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+}
