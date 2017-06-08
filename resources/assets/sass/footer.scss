@@ -4,3 +4,14 @@
  *
  * @author Jennifer Cooley design@jccdesignworks.com
  */
+
+#footer {
+    //general
+    background-color: $navy;
+    padding: 0.2em 0;
+
+    .copyright {
+        font-size: 0.7em;
+        color: $gold;
+    }
+}

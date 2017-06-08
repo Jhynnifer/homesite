@@ -11,9 +11,10 @@
     //general
     background-color: darken($orange, 10);
     background-image: url('/images/backgrounds/wiggle.svg');
+    background-repeat: repeat;
     color: #fff;
     font-size: 1.2em;
-    padding: 2em 0;
+    padding: 1em 0;
 
     //links
     a {

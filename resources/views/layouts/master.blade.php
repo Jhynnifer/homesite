@@ -7,7 +7,7 @@
 @include('includes/opengraph')
 @include('includes/css')
 @include('includes/icons')
-
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body onload="{{ $_onload or null }}">
 
@@ -23,6 +23,7 @@
 @include('includes/footer')
 
 <!--extras-->
+@include('includes/javascript')
 {{--@include('includes/breakpoint')
 @include('includes/modals/login')
 @include('includes/modals/feedback')

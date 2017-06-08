@@ -1,12 +1,13 @@
 {
-  "/js/app.js": "/js/app.ef34acc7394658d44e7a.js",
-  "/css/app.css": "/css/app.36a578d2c41bf646363d991f548ea3ef.css",
-  "/css/fontawesome.css": "/css/fontawesome.1840fcc01ac08de289f7948dc6ff3a45.css",
-  "/css/fonts.css": "/css/fonts.ef39d05e1d787ba858db8de72df88825.css",
-  "/css/footer.css": "/css/footer.d41d8cd98f00b204e9800998ecf8427e.css",
-  "/css/extended_footer.css": "/css/extended_footer.90de8f72a5ac392a659ac91faeecce00.css",
+  "/js/app.js": "/js/app.js",
+  "/css/app.css": "/css/app.css",
+  "/css/fontawesome.css": "/css/fontawesome.css",
+  "/css/fonts.css": "/css/fonts.css",
+  "/css/footer.css": "/css/footer.css",
+  "/css/extended_footer.css": "/css/extended_footer.css",
   "/css/all.css": "/css/all.27ff2339dd5cf9fddc8000eb5054cd8f.css",
   "resources/assets/sass/all.0acdeae4e14f6a3c217df6c5235b61a2": "resources/assets/sass/all.0acdeae4e14f6a3c217df6c5235b61a2",
   "resources/assets/sass/all.scss": "resources/assets/sass/all.0acdeae4e14f6a3c217df6c5235b61a2.scss",
-  "/mix.js": "/mix.f6ea224f380a64e12309.js"
+  "/mix.js": "/mix.js",
+  "/js/classie.js": "/js/classie.js"
 }

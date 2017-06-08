@@ -11,6 +11,21 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix/*.js('resources/assets/js/app.js', 'public/js')*/
-   .sass('resources/assets/sass/app.scss', 'public/css')
-   .version();
+/*mix.js('resources/assets/js/app.js', 'public/js');*/
+
+/*mix.combine(['resources/assets/sass/app.scss',
+    'resources/assets/sass/extended_footer.scss',
+    'resources/assets/sass/fontawesome.scss',
+    'resources/assets/sass/fonts.scss',
+    'resources/assets/sass/footer.scss'], 'resources/assets/sass/all.scss');*/
+
+
+mix.sass('resources/assets/sass/app.scss', 'public/css');
+
+/*mix.sass('resources/assets/sass/app.scss', 'public/css')
+   .sass('resources/assets/sass/extended_footer.scss', 'public/css')
+   .sass('resources/assets/sass/fontawesome.scss', 'public/css')
+   .sass('resources/assets/sass/fonts.scss', 'public/css')
+   .sass('resources/assets/sass/footer.scss', 'public/css');*/
+
+/*mix.version();*/
