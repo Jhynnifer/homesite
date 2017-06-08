@@ -13,7 +13,7 @@
     background-image: url('/images/backgrounds/wiggle.svg');
     color: #fff;
     font-size: 1.2em;
-    padding: 4em 0;
+    padding: 2em 0;
 
     //links
     a {
@@ -24,12 +24,8 @@
         color: $gold;
     }
 
-    .extended-footer {
-        background: $orange;
-        padding: 20px 0;
-        p {
-            font-size: $font-size-h5
-        }
+    p {
+        font-size: $font-sm;
     }
 
     //logos

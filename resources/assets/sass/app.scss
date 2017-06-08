@@ -1,5 +1,10 @@
+/**
+ * styles
+ *
+ * @author Jennifer Cooley design@jccdesignworks.com
+ */
 
-// Fonts
+/***** Google fonts import ************/
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 // Variables
@@ -7,3 +12,14 @@
 
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
+
+// Bootstrap mixins
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+// Sass Files
+@import "extended_footer";
+@import "fontawesome";
+@import "fonts";
+@import "footer";
+

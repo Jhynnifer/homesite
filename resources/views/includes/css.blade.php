@@ -1,9 +1,5 @@
 <!--compiled css-->
-<link rel="stylesheet" href="{{ elixir('css/all.css') }}" />
+<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
 <!--extra css-->
-@if(isset($css))
-    @foreach($css as $file)
-        <link rel="stylesheet" href="{{ asset($file) }}" />
-    @endforeach
-@endif
+@stack('styles')

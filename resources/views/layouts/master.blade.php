@@ -3,7 +3,7 @@
 <head itemscope itemtype="http://schema.org/WebSite">
 {{--<title itemprop="name">{{ $_name }}{{ (isset($_title)) ? ' :: ' . $_title : null }}</title>--}}
 
-@include('includes/meta')
+{{--@include('includes/meta')--}}
 @include('includes/opengraph')
 @include('includes/css')
 @include('includes/icons')
@@ -23,14 +23,14 @@
 @include('includes/footer')
 
 <!--extras-->
-@include('includes/breakpoint')
+{{--@include('includes/breakpoint')
 @include('includes/modals/login')
 @include('includes/modals/feedback')
 @include('includes/modals/confirm')
 @include('includes/modals/delete')
 @include('includes/javascript')
 @include('includes/structured')
-@yield('javascript')
+@yield('javascript')--}}
 
 </body>
 </html>
