@@ -6,7 +6,7 @@
 </script>
 
 <!--app compiled js-->
-{{--<script src="{{ mix('js/app.js') }}"></script>--}}
+<script src="{{ mix('js/app.js') }}"></script>
 
 <!--script stack-->
 @stack('scripts')

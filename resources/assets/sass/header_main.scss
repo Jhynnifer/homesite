@@ -1,4 +1,5 @@
 @import "variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 
 /**
  * extended footer styles
@@ -6,9 +7,116 @@
  * @author Jennifer Cooley design@jccdesignworks.com
  */
 
-#header_main {
+#main_header {
 
     .logo {
         max-width: 75%;
+    }
+
+    .top-spacer {
+        margin-top: 15%;
+    }
+    @include media-breakpoint-down(md) {
+        .top-spacer {
+            margin-top: 40%;
+        }
+    }
+
+    #main_headline {
+        span {
+            margin-bottom: 10px;
+            background: $navy;
+            padding: 10px;
+            color: $gold;
+            font-size: $font-h2;
+
+        }
+        @include media-breakpoint-down(md) {
+            span {
+                font-size: $font-h3;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            span {
+                font-size: $font-h6;
+            }
+        }
+    }
+
+    body {
+        margin: 0;
+        font-family: $header;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(2, 1, 34);
+        background-color: rgba(2, 1, 34, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 15%;
+        width: 100%;
+        text-align: right;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        margin-right: 10%;
+        text-decoration: none;
+        font-size: $font-h1;
+        color: $gold;
+        display: block;
+        transition: 0.3s;
+    }
+
+    #myNav, .overlay a:hover, .overlay a:focus {
+        color: $orange_red;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 84px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay a {
+            font-size: 30px
+        }
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+
+    #jc-navbar {
+        top: 20px;
+        z-index: 1;
+        background-color: transparent;
+        border: 0;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    #jc-navbar-fixed {
+        top: 0;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        background: $navy;
+        padding: 10px 0;
     }
 }

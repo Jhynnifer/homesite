@@ -1,0 +1,25 @@
+@import "variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+/**
+ * homepage styles
+ *
+ * @author Jennifer Cooley design@jccdesignworks.com
+ */
+
+    .icon-image {
+        max-height: 100px;
+        margin-bottom: 20px;
+    }
+    .icon-header {
+        font-family: $header;
+        font-size: $font-h4;
+        margin-bottom: 10px;
+    }
+    .icon-content {
+        font-family: $body;
+        font-size: 16px;
+    }
+
+
+

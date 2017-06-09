@@ -8,23 +8,37 @@
             <a href="#">Contact</a>
         </div>
     </div>
-    {{--<img src="http://placekitten.com/2600/800" width="100%">--}}
 
-    <div style="background-image: url('http://placekitten.com/2600/800'); background-size: cover; height: 800px; ">
-    <div class="container pt-3">
-        <div class="row" id="jc-navbar">
-            <div class="col-8 d-flex align-items-center justify-content-md-start">
-                <img src="/images/ph-logo.svg" class="logo" alt="JCCDesignworks" />
+    <div style="background-image: url(' {{ $image }}'); background-size: cover; height: 600px; ">
+        <div class="container">
+            <div class="py-3" id="jc-navbar">
+                <div class="row">
+                    <div class="col-8 d-flex align-items-center justify-content-md-start">
+                        <img src="/images/ph-logo.svg" class="logo" alt="JCCDesignworks" />
+                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 d-flex align-items-center justify-content-end">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div class="top-spacer" id="main_headline">
+                <div class="col-11 mb-3">
+                    <span>EVERY GREAT DESIGN</span>
+                </div>
+                <div class="col-11 mb-3">
+                    <span>STARTS WITH COFFEE,</span>
+                </div>
+                <div class="col-11 mb-3">
+                    <span>TWO COOKIES, AND</span>
+                </div>
+                <div class="col-11 mb-3">
+                    <span>AN IDEA.</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-</div>
 
-@push('scripts')
+    @push('scripts')
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
@@ -34,23 +48,15 @@
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
-{{--
+
     <script>
-        $(document).ready(function () {
+        $(window).scroll(function () {
+            var sticky = $('.sticky'),
+                scroll = $(window).scrollTop();
 
-            $(window).scroll(function () {
-
-                console.log($(window).scrollTop());
-
-                if ($(window).scrollTop() > 960) {
-                    $('#jc-navbar').addClass('jc-navbar-fixed');
-                }
-
-                if ($(window).scrollTop() < 960) {
-                    $('#jc-navbar').removeClass('jc-navbar-fixed');
-                }
-            });
+            if (scroll >= 100) sticky.addClass('jc-navbar-fixed');
+            else sticky.removeClass('jc-navbar-fixed');
         });
-    </script>--}}
+    </script>
 
 @endpush
